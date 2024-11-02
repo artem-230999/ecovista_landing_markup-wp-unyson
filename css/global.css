@@ -1,21 +1,8 @@
 :root {
 	--color-accent: #1a943c;
+	--color-accent-hover: #095e21;
 }
 
-input, label, textarea, button {
-	font-family: 'Roboto';
-	outline: none;
-}
-
-ul {
-	padding: 0;
-	list-style: none;
-}
-
-a {
-	color: inherit;
-	text-decoration: none;
-}
 
 *,
 *::after,
@@ -33,7 +20,24 @@ body {
 	min-width: 320px;
 	position: relative;
 	font-family: 'Roboto', sans-serif;
+	padding-bottom: 500px;
 }
+
+input, label, textarea, button {
+	font-family: 'Roboto';
+	outline: none;
+}
+
+ul {
+	padding: 0;
+	list-style: none;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
 
 /* container */
 .container {
@@ -60,3 +64,20 @@ body {
 .logo img {
 	max-width: 170px;
 }
+
+/* button */
+.button	a {
+	display: inline-block;
+	border-radius: 5px;
+	padding: 20px 50px;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 1.6;
+	text-transform: uppercase;
+	background-color: var(--color-accent);
+	transition: background-color .35s ease;
+}
+.button	a:hover {
+	background-color: var(--color-accent-hover);
+}
+
