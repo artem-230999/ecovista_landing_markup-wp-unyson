@@ -1,1 +1,73 @@
-@import url('global.css');
+/* header */
+.header-top {
+  color: #fff;
+  background-color: #3e3333;
+}
+.header-row {
+  padding: 12px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-text {
+  color: #c6c6c6;
+}
+.header-info {
+  display: flex;
+  column-gap: 30px;
+}
+.header-info-item {
+  display: flex;  
+  column-gap: 14px;
+  align-items: center;
+}
+.header-info-item i {
+  font-size: 18px;
+}
+.header-social {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+}
+.header-social a {
+  width: 35px;
+  height: 36px;
+  display: flex;  
+  align-items: center;
+  justify-content: center;
+}
+.header-social i {
+  font-size: 22px;
+}
+.header-bottom {
+  border-bottom: 1px solid #dcdcdc;
+}
+.header-bottom-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-logo {
+}
+.header-nav {
+}
+.header-nav ul {
+  display: flex;
+}
+.header-nav ul li {
+
+}
+.header-nav ul li a {
+  display: block;
+  padding: 25px 35px;
+  border-right: 1px solid #dcdcdc;
+  font-size: 18px;
+  transition: color .35s ease, background-color .35s ease;
+}
+.header-nav ul li a:hover {
+  color: #fff;
+  background-color: var(--color-accent);
+}
+.header-nav ul li:first-child a {
+  border-left: 1px solid #dcdcdc;
+}
