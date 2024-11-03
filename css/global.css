@@ -20,7 +20,6 @@ body {
 	min-width: 320px;
 	position: relative;
 	font-family: 'Roboto', sans-serif;
-	padding-bottom: 500px;
 }
 
 input, label, textarea, button {
@@ -38,12 +37,26 @@ a {
 	text-decoration: none;
 }
 
+/* img {
+	vertical-align: middle;
+} */
+
 
 /* container */
 .container {
 	max-width: 1220px;
 	padding: 0 10px;
 	margin: 0 auto;
+}
+
+/* p-100 */
+.p-100 {
+	padding: 100px 0;
+}
+
+/* bg-gray */
+.bg-gray {
+	background-color: #eee;
 }
 
 /* link */
@@ -74,6 +87,7 @@ a {
 	font-size: 18px;
 	line-height: 1.6;
 	text-transform: uppercase;
+	color: #fff;
 	background-color: var(--color-accent);
 	transition: background-color .35s ease;
 }
@@ -81,3 +95,22 @@ a {
 	background-color: var(--color-accent-hover);
 }
 
+/* title */
+.title-wrap {
+	text-align: center;
+	margin-bottom: 60px;
+}
+.title-icon img {
+	max-width: 58px;
+}
+.title {
+	font-weight: 700;
+	font-size: 42px;
+	line-height: 1.6;
+	color: var(--color-accent);
+}
+.subtitle {
+	font-size: 18px;
+	line-height: 1.6;
+	color: #9f9797;
+}
