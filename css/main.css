@@ -154,6 +154,10 @@
   border-radius: 5px;
   border: 1px solid var(--color-accent);
   background-color: #fff;
+  transition: transform .35s ease;
+}
+.features-item:hover {
+  transform: scale(1.05);
 }
 .features-icon {
   font-size: 50px;
