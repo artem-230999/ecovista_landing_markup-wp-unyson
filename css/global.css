@@ -38,6 +38,15 @@ a {
 	text-decoration: none;
 }
 
+button {
+	cursor: pointer;
+	border: none;
+}
+
+fieldset {
+  border: none;
+}
+
 /* img {
 	vertical-align: middle;
 } */
@@ -85,7 +94,8 @@ a {
 }
 
 /* button */
-.button	a {
+.button	a,
+.form-btn  {
 	display: inline-block;
 	border-radius: 5px;
 	padding: 20px 50px;
@@ -97,7 +107,8 @@ a {
 	background-color: var(--color-accent);
 	transition: background-color .35s ease;
 }
-.button	a:hover {
+.button	a:hover,
+.form-btn:hover {
 	background-color: var(--color-accent-hover);
 }
 
