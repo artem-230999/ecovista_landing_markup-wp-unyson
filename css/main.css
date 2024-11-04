@@ -210,9 +210,6 @@
 
 
 /* services */
-.services-wrap {
-
-}
 .services-row {
   display: flex;
   column-gap: 20px;
@@ -235,9 +232,107 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform .7s ease;
+}
+.services-item:hover .services-thumb img {
+  transform: scale(1.2);
 }
 .service-item-title {
   font-weight: 500;
   font-size: 24px;
   line-height: 1.6;
+  transition: color .7s ease;
+}
+.services-item:hover .service-item-title {
+  color: var(--color-accent);
+}
+
+
+/* numbers */
+.numbers-wrap {
+  padding: 52px 0;
+  color: #fff;
+  text-align: center;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+}
+.numbers-wrap::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(52, 40, 40, 0.45);
+  z-index: -1;
+}
+.numbers-row {
+  display: flex;
+  justify-content: center;
+  column-gap: 45px;
+}
+.numbers-item {
+  width: 200px;
+  height: 188px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  padding: 20px 9px;
+}
+.numbers-num {
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 1.6;
+}
+.numbers-descr {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #c1bfbf;
+}
+
+
+/* team */
+.team-row {
+  display: flex;
+  column-gap: 20px;
+}
+.team-item {
+  max-width: 285px;
+  line-height: 1.6;
+  text-align: center;
+}
+.team-thumb {
+  height: 296px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.team-thumb img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .7s ease;
+}
+.team-item:hover .team-thumb img {
+  transform: scale(1.1);
+}
+.team-name {
+  font-weight: 500;
+  font-size: 24px;
+  margin-bottom: 4px;
+  transition: color .7s ease;
+}
+.team-item:hover .team-name {
+  color: var(--color-accent);
+}
+.team-spec {
+  font-size: 20px;
+  color: #999595;
 }
