@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
   // Reviews END
-  
+
   // Gallery START
   // masonry
   var $grid = $('.grid').masonry({
@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     },
     gallery:{
-      enabled:true
+      enabled: true
     }
   });
 
@@ -90,5 +90,18 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     });
   // Gallery END
+
+  // Partners START
+  const swiperPartners = new Swiper('.swiper-partners', {
+    speed: 500,
+    spaceBetween: 20,
+    slidesPerView: 4,
+    scrollbar: {
+      el: '.swiper-partners .swiper-scrollbar',
+      dragSize: '56px',
+      draggable: true
+    }
+  });
+  // Partners END
 
 }, false);

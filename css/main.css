@@ -405,8 +405,17 @@
   gap: 0 28px;
   font-size: 20px;
 }
+.gallery-tabs a {
+  transition: color .4s ease;
+}
+.gallery-tabs a:hover {
+  color: var(--color-accent);
+}
 .gallery-tabs a.is-active {
   font-weight: 700;
+}
+.gallery-tabs a.is-active:hover {
+  color: #fff;
 }
 
 /* grid */
@@ -457,4 +466,47 @@
   width: 285px;
   border-radius: 5px;
   object-fit: cover;
+}
+
+
+/* partners */
+.partners-item {
+  max-width: 285px;
+  height: 86px;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #cdcdcd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border .35s ease;
+}
+.partners-item:hover {
+  border-color: var(--color-accent);
+}
+.partners-item img {
+  filter: grayscale(5);
+  transition: filter .35 ease;
+}
+.partners-item:hover img {
+  filter: grayscale(0);
+}
+
+/* swiper-partners */
+.swiper-partners .swiper-wrapper {
+  margin-bottom: 40px;
+}
+.swiper-partners .swiper-scrollbar {
+  position: static;
+  height: 8px;
+  width: 280px;
+  margin: 0 auto;
+  background-color: #d1d2d1;
+  cursor: pointer;
+}
+.swiper-partners .swiper-scrollbar-drag {
+  background-color: var(--color-accent);
+}
+.swiper-partners .swiper-scrollbar-drag:active {
+  background-color: var(--color-accent-hover);
 }
