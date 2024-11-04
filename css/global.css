@@ -20,6 +20,7 @@ body {
 	min-width: 320px;
 	position: relative;
 	font-family: 'Roboto', sans-serif;
+	padding-bottom: 200px;
 }
 
 input, label, textarea, button {
@@ -57,6 +58,11 @@ a {
 /* bg-gray */
 .bg-gray {
 	background-color: #eee;
+}
+
+/* hidden */
+.hidden {
+	display: none;
 }
 
 /* link */
@@ -113,4 +119,25 @@ a {
 	font-size: 18px;
 	line-height: 1.6;
 	color: #9f9797;
+}
+
+/* swiper */
+.swiper .swiper-pagination {
+  display: flex;
+  column-gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+.swiper .swiper-pagination-bullet {
+  width: 18px;
+  height: 18px;
+  border: 1px solid #fff;
+  background-color: #B2A39A;
+  opacity: 1;
+}
+.swiper .swiper-pagination-bullet-active {
+  background-color: var(--color-accent);
+}
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0;
 }
