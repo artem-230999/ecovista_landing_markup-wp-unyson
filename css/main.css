@@ -597,13 +597,13 @@
 .footer-row {
   padding: 60px 0;
   display: flex;
+  gap: 0 100px;
   line-height: 1.6;
   color: #c6c5c5;
   border-bottom: 1px solid rgba(255, 255, 255, 0.22);
 }
 .footer-left {
   width: 286px;
-  margin-right: 105px;
 }
 .footer-logo {
   display: inline-block;
@@ -628,12 +628,18 @@
 }
 .footer-right {
   display: flex;
-  gap: 60px; 
 }
 .footer-list {
+  max-width: 250px;
   display: flex;
   flex-direction: column;
   gap: 15px 0;
+} 
+.footer-list-nav {
+  margin-right: 100px;
+}
+.footer-list-services {
+  margin-right: 50px;
 }
 .footer-list li:first-child {
   font-weight: 500;
@@ -641,7 +647,7 @@
   color: #fff;
   margin-bottom: 10px;
 }
-.footer-list li {
+.footer-list li a {
   font-size: 18px;
 }
 .footer-info-item {
